@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./courses.component.scss']
 })
 export class CoursesComponent implements OnInit {
+  // 1 - Render course list
+  // 2 - Select a course
+  // 3 - Render selected course
+
   courses = [
     {
       id: 1,
@@ -13,12 +17,24 @@ export class CoursesComponent implements OnInit {
       description: 'Learn the fundamentals of Angular 13',
       percentComplete: 26,
       favorite: true
+    },
+    {
+      id: 2,
+      title: 'TypeScript Fundamentals',
+      description: 'Learn the fundamentals of TypeScript',
+      percentComplete: 0,
+      favorite: false
     }
   ];
+
+  selectedCourse = null;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  selectCourse(course){
+    this.selectedCourse = course;
+  }
 }
