@@ -1,8 +1,24 @@
 {
   "courses": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Angular 13 Fundamentals",
+      "description": "Learn the fundamentals of Angular 13",
+      "percentComplete": 26,
+      "favorite": true
+    },
+    {
+      "id": "5Ga187A",
+      "title": "TypeScript Fundamentals",
+      "description": "",
+      "percentComplete": 0,
+      "favorite": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "1",
+      "title": "Component Driven Architecture",
       "description": "Learn the fundamentals of Angular 13",
       "percentComplete": 26,
       "favorite": true

@@ -10,7 +10,7 @@
             *ngFor="let course of courses"
             (click)="selectCourse(course)"
           >
-            <h3 matLine>{{ originalTitle | titlecase }}</h3>
+            <h3 matLine>{{ course.title | titlecase }}</h3>
             <p matLine>
               {{ course.description }}
             </p>
